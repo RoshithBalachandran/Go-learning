@@ -10,11 +10,11 @@ func main() {
 	b := 1
 	var c int
 	fmt.Print("Fibonacci series ")
-	for i := 1; i <= n; i++ {
-		c = a + b
-		a = b
+	
+	for i:=1 ; i<n ; i++{
+		c=a+b
+		a=b
 		b=c
-		
-		fmt.Print(a, " ")
-	}
+		fmt.Print(a ," ")
+}
 }

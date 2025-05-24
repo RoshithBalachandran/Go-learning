@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var nums = [5]int{8, 5, 3, 4, 1}
-
+	var nums = [8]int{5, 9, 7, 6, 8, 2, 4, 1}
 	min := nums[0]
 	max := nums[0]
 
@@ -16,6 +15,7 @@ func main() {
 			max = nums[i]
 		}
 	}
-	fmt.Println("The minimum number is :", min)
-	fmt.Println("The minimum number is :", max)
+	fmt.Println("The min is :",min)
+	fmt.Println("the max is :",max)
 }
+

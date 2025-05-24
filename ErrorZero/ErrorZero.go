@@ -5,18 +5,18 @@ import (
 	"fmt"
 )
 
-func division(a, b int) (int, error) {
+func Division(a, b float32) (float32, error) {
 	if b == 0 {
-		return -1, errors.New("Divided by Zero")
+		return 0, errors.New("0  is nit divicible by any number")
 	}
 	return a/b , nil
 }
 
 func main() {
-	value,err := division(10 , 0)
-	if err != nil {
-		fmt.Println(err.Error())
+	result , err:=Division(10,0)
+	if err != nil{
+		fmt.Println("Error :",err.Error())
+		return
 	}
-	fmt.Println("the result is =", value)
+	fmt.Println("The result is :" , result)
 }
-
